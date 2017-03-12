@@ -2,8 +2,8 @@ import React, { Component } from 'react';
 import './App.css';
 import axios from 'axios';
 
-const SERVERURL = 'http://localhost:8080';
-// const SERVERURL = '';
+// const SERVERURL = 'http://localhost:8080';
+const SERVERURL = '';
 
 class App extends Component {
   constructor(){
