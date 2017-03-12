@@ -3,7 +3,8 @@ import './App.css';
 import axios from 'axios';
 
 // const SERVERURL = 'http://localhost:8080';
-const SERVERURL = 'http://stevo.ca';
+// const SERVERURL = 'http://stevo.ca';
+const SERVERURL = '';
 
 class App extends Component {
   constructor(){

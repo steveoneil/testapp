@@ -14,7 +14,7 @@ app.use(bodyParser.json());
 app.use(express.static(__dirname + './../testapp-front/build'));
 
 app.get('/', (req, res) => {
-    res.send('It\'s working!...found "/" endpoint');
+    res.send('Its working!...found endpoint');
 
 });
 
