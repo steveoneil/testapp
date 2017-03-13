@@ -32,7 +32,7 @@ class App extends Component {
   render() {
     return (
       <div className="App container">
-        <Stuff clickHandler={this.clickHandler} stuff={this.state.stuff} />
+        <Stuff clickHandler={this.clickHandler} stuff={this.state.stuff} things={this.state.things}/>
       </div>
     );
   }
@@ -45,6 +45,8 @@ class Stuff extends Component {
       <div className="Stuff"> 
           <button className="btn-info" onClick={this.props.clickHandler}> Click me! </button>
           <h4>{this.props.stuff}</h4>
+          <h5>Cool: {this.props.things.cool}</h5>
+          <h5>Not Cool: {this.props.things.not_cool}</h5>
       </div>
     )
   }
