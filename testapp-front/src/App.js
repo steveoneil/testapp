@@ -21,7 +21,7 @@ class App extends Component {
 
   clickHandler () {
     let _this = this;
-    axios.get(SERVERURL + '/')
+    axios.get(SERVERURL + '/test')
     .then (function (response) {
       _this.setState({
         stuff: response.data
