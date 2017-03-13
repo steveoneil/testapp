@@ -11,8 +11,8 @@ class App extends Component {
     super();
       this.state = {
         things: {
-          cool: ['coding', 'good food', 'fun people'],
-          not_cool: ['losing an hour of sleep', 'Trumpism']
+          cool: [],
+          not_cool: []
         },
         stuff: "blah blah"
       }
@@ -24,7 +24,11 @@ class App extends Component {
     axios.get(SERVERURL + '/test')
     .then (function (response) {
       _this.setState({
-        stuff: response.data
+        stuff: response.data,
+        things: {
+          cool: ['coding', 'good food', 'fun people'],
+          not_cool: ['losing an hour of sleep', 'Trumpism']
+        }
       })
     })
   }
